@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pyret+",
+  "description": "This extension helps users coding in https://code.pyret.org/ more easily.",
+  "version": "1.0",
+  "content_scripts": [
+    { 
+      "matches": [
+          "https://code.pyret.org/editor*"
+      ], 
+      "js": ["inject.js"] 
+    }
+  ],
+  "permissions": [
+      "tabs"
+  ],
+  "web_accessible_resources": [
+      "rawtext.js"
+  ]
+}
